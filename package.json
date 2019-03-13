@@ -1,0 +1,50 @@
+{
+  "name": "nest-graceful",
+  "version": "0.0.0",
+  "description": "nest graceful shutdown library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "tslint -p tsconfig.json -e 'lib/**/*.spec.ts' 'lib/**/*.ts'",
+    "build": "tsc",
+    "start": "ts-node example/index.ts"
+  },
+  "keywords": [],
+  "author": "Ingyu Yoon <loveloper44@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^5.6.2",
+    "@nestjs/core": "^5.6.2",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.4.0"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^5.7.2",
+    "@types/jest": "^24.0.4",
+    "@types/node": "^11.9.3",
+    "@types/uuid": "^3.4.4",
+    "jest": "^24.1.0",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^8.0.2",
+    "tsconfig-paths": "^3.8.0",
+    "tsconfig-paths-jest": "0.0.1",
+    "typescript": "^3.3.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node",
+    "setupFiles": [
+      "jest-date-mock"
+    ]
+  }
+}
