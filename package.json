@@ -9,6 +9,10 @@
     "build": "tsc",
     "start": "ts-node example/index.ts"
   },
+  "repository": {
+    "type":"git",
+    "url":"https://github.com/loveloper44/nest-graceful.git"
+  },
   "keywords": [],
   "author": "Ingyu Yoon <loveloper44@gmail.com>",
   "license": "ISC",
