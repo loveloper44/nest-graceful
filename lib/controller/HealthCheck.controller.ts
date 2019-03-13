@@ -2,7 +2,7 @@ import { Controller, Get, Inject } from '@nestjs/common';
 import { IGracefulManager } from '../graceful/GracefulManager.interface';
 import { GracefulService, ServiceStatus } from '../graceful/graceful.service';
 
-@Controller('healthcheck')
+@Controller('health')
 export class HealthCheckController {
 
     constructor(

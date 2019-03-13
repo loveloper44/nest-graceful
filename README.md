@@ -81,8 +81,8 @@ await gracefulService.listen(3000);
 
 ```
 
-Check healthcheck
+Check health
 
 ```js
-Get http://localhost:3000/healthcheck
+Get http://localhost:3000/health
 ```
