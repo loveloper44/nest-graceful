@@ -66,6 +66,21 @@ export class AppModule { }
 
 ```
 
+Start nest app
+
+```js
+
+const app = await NestFactory.create(AppModule);
+
+const gracefulService = app.get(GracefulService);
+
+gracefulService.bind(app);
+
+await gracefulService.listen(3000);
+
+
+```
+
 Check healthcheck
 
 ```js
