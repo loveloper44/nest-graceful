@@ -10,7 +10,7 @@ import { IGracefulManager } from '../graceful/GracefulManager.interface';
 export class GracefulModule {
     static forRoot(
         gracefulManager: Type<IGracefulManager>,
-        imports: (Type<any> | DynamicModule | Promise<DynamicModule> | ForwardReference<any>)[],
+        imports: (Type<any> | DynamicModule | Promise<DynamicModule> | ForwardReference<any>)[] = [],
     ): DynamicModule {
 
         const gracefulManagerProvider: Provider = {
