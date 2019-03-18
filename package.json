@@ -1,6 +1,6 @@
 {
   "name": "nest-graceful",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "nest graceful shutdown library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,8 +10,8 @@
     "start": "ts-node example/index.ts"
   },
   "repository": {
-    "type":"git",
-    "url":"https://github.com/loveloper44/nest-graceful.git"
+    "type": "git",
+    "url": "https://github.com/loveloper44/nest-graceful.git"
   },
   "keywords": [],
   "author": "Ingyu Yoon <loveloper44@gmail.com>",
