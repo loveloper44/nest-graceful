@@ -28,6 +28,9 @@ export class GracefulService {
         await this.server.close();
 
         await this.gracefulManager.afterServerClosed();
+
+        process.exit(0);
+
     }
 
     private async start(port: number): Promise<void> {
